@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profit Tracker Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>💼 Business Profit Tracker</h1>
+
+    <div class="cards-grid">
+      <div class="card" id="buyCard">
+        <h3>Total Buy</h3>
+        <div class="amount" id="totalBuy">$0</div>
+      </div>
+      <div class="card">
+        <h3>Buy - Sell</h3>
+        <div class="amount" id="totalExpense">$0</div>
+      </div>
+      <div class="card">
+        <h3>Total Profit</h3>
+        <div class="amount" id="totalProfit">$0</div>
+      </div>
+    </div>
+
+    <div class="input-box">
+      <div class="form-group">
+        <label for="titleInput">Title</label>
+        <input type="text" id="titleInput" placeholder="Enter title">
+      </div>
+      <div class="form-group">
+        <label for="amountInput">Amount ($)</label>
+        <input type="number" id="amountInput" placeholder="Enter amount">
+      </div>
+      <div class="form-group">
+        <label for="descInput">Description</label>
+        <textarea id="descInput" placeholder="Enter description"></textarea>
+      </div>
+      <div class="btn-grid">
+        <button class="btn btn-buy" id="buyBtn">Buy</button>
+        <button class="btn btn-sell" id="sellBtn">Sell</button>
+        <button class="btn btn-clear" id="clearBtn">Clear All</button>
+      </div>
+    </div>
+
+    <div class="transactions-list" id="transactionsList">
+      <div class="empty-msg">No transactions yet. Start tracking!</div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
